@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="cart.css">
+
+    <title>Panel del Empleado</title>
+</head>
+
+<body>
+
+    <!-- ================= ENCABEZADO ================= -->
+    <header>
+        <h1>PANEL DEL EMPLEADO</h1>
+        <span>Cafetería | Empleado</span>
+    </header>
+
+
+    <!-- ================= MENÚ ================= -->
+    <nav class="menu">
+
+        <a href="index.html">🏠 Inicio</a>
+
+        <a href="cafeteria.html">☕ Productos</a>
+
+        <a href="cafeteria_sen.html">📋 Servicios</a>
+
+        <a href="tu_carito.html">🛒 Carrito</a>
+
+        <a href="panel_enpleados.html">👨‍💼 Empleados</a>
+
+    </nav>
+
+
+    <!-- ================= CONTENEDOR PRINCIPAL ================= -->
+    <div class="contenedor">
+
+
+        <!-- ================================================= -->
+        <!-- LISTA DE PEDIDOS -->
+        <!-- ================================================= -->
+
+        <div class="lista-pedidos">
+
+            <!-- FILTROS -->
+            <div class="filtros">
+
+                <button type="button" class="filtro activo" data-filtro="todos">
+                    TODOS 5
+                </button>
+
+                <button type="button" class="filtro" data-filtro="pendiente">
+                    PENDIENTES 2
+                </button>
+
+                <button type="button" class="filtro" data-filtro="preparacion">
+                    EN PREPARACION 1
+                </button>
+
+            </div>
+
+
+            <!-- ================= PEDIDO 1 ================= -->
+
+            <div class="pedido seleccionado" data-estado="pendiente">
+
+                <div class="fila">
+                    <span class="numero">#0041</span>
+                    <span class="hora">09:14</span>
+                </div>
+
+                <div class="fila">
+                    <span class="mesa">Mesa 3</span>
+                    <span class="estado">Pendiente</span>
+                </div>
+
+                <div class="detalle">
+                    3 articulos · 10.80 $
+                </div>
+
+            </div>
+
+
+            <!-- ================= PEDIDO 2 ================= -->
+
+            <div class="pedido" data-estado="preparacion">
+
+                <div class="fila">
+                    <span class="numero">#0042</span>
+                    <span class="hora">09:21</span>
+                </div>
+
+                <div class="fila">
+                    <span class="mesa">Barra</span>
+                    <span class="estado">En preparacion</span>
+                </div>
+
+                <div class="detalle">
+                    2 articulos · 6.20 $
+                </div>
+
+            </div>
+
+
+            <!-- ================= PEDIDO 3 ================= -->
+
+            <div class="pedido" data-estado="listo">
+
+                <div class="fila">
+                    <span class="numero">#0043</span>
+                    <span class="hora">09:33</span>
+                </div>
+
+                <div class="fila">
+                    <span class="mesa">Mesa 7</span>
+                    <span class="estado">Listo</span>
+                </div>
+
+                <div class="detalle">
+                    2 articulos · 28.20 $ 
+                </div>
+
+            </div>
+
+
+            <!-- ================= PEDIDO 4 ================= -->
+
+            <div class="pedido" data-estado="pendiente">
+
+                <div class="fila">
+                    <span class="numero">#0044</span>
+                    <span class="hora">09:40</span>
+                </div>
+
+                <div class="fila">
+                    <span class="mesa">Mesa 1</span>
+                    <span class="estado">Pendiente</span>
+                </div>
+
+                <div class="detalle">
+                    2 articulos · 12.00 $
+                </div>
+
+            </div>
+
+
+            <!-- ================= PEDIDO 5 ================= -->
+
+            <div class="pedido" data-estado="entregado">
+
+                <div class="fila">
+                    <span class="numero">#0045</span>
+                    <span class="hora">09:47</span>
+                </div>
+
+                <div class="fila">
+                    <span class="mesa">Terraza 2</span>
+                    <span class="estado">Entregado</span>
+                </div>
+
+                <div class="detalle">
+                    2 articulos · 6.70 $
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- DETALLE DEL PEDIDO -->
+        <!-- ================================================= -->
+
+        <div class="detalle-pedido">
+
+            <!-- ENCABEZADO DEL PEDIDO -->
+
+            <div class="encabezado">
+
+                <div>
+
+                    <h2>
+                        #0041
+
+                        <span class="estado-principal">
+                            PENDIENTE
+                        </span>
+                    </h2>
+
+                    <p class="recibido">
+                        Mesa 3 · recibido a las 09:14
+                    </p>
+
+                </div>
+
+
+                <div class="total">
+
+                    <strong>10.80 $</strong>
+
+                    <p>Total</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- ARTICULOS -->
+            <!-- ================================================= -->
+
+            <div class="seccion">
+
+                <h3>ARTICULOS</h3>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>PRODUCTO</th>
+                            <th>CANT.</th>
+                            <th>P.U.</th>
+                            <th>SUBTOTAL</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Cafe americano</td>
+                            <td>2</td>
+                            <td>2.50 $</td>
+                            <td>5.00 $</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tostada con tomate</td>
+                            <td>1</td>
+                            <td>3.00 $</td>
+                            <td>3.00 $</td>
+                        </tr>
+
+                        <tr>
+                            <td>Zumo de naranja</td>
+                            <td>1</td>
+                            <td>2.80 $</td>
+                            <td>2.80 $</td>
+                        </tr>
+
+                        <tr class="total-fila">
+
+                            <td colspan="3">
+                                TOTAL
+                            </td>
+
+                            <td>
+                                10.80 $
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- NOTAS -->
+            <!-- ================================================= -->
+
+            <div class="seccion">
+
+                <h3>
+                    NOTAS
+
+                    <button type="button" class="editar">
+                        Editar
+                    </button>
+
+                </h3>
+
+                <div class="notas">
+                    Un cafe sin azucar
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- ACTUALIZAR ESTADO -->
+            <!-- ================================================= -->
+
+            <div class="seccion">
+
+                <h3>
+                    ACTUALIZAR ESTADO
+                </h3>
+
+
+                <div class="estados">
+
+                    <button
+                        type="button"
+                        class="estado-btn activo"
+                        data-estado="PENDIENTE">
+                        PENDIENTE
+                    </button>
+
+
+                    <span class="flecha">
+                        →
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="estado-btn"
+                        data-estado="EN PREPARACION">
+                        EN PREPARACION
+                    </button>
+
+
+                    <span class="flecha">
+                        →
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="estado-btn"
+                        data-estado="LISTO">
+                        LISTO
+                    </button>
+
+
+                    <span class="flecha">
+                        →
+                    </span>
+
+
+                    <button
+                        type="button"
+                        class="estado-btn"
+                        data-estado="ENTREGADO">
+                        ENTREGADO
+                    </button>
+
+                </div>
+
+
+                <!-- BOTON ACTUALIZAR -->
+
+                <button
+                    type="button"
+                    class="actualizar">
+
+                    PASAR A: EN PREPARACION
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================================= -->
+
+    <script>
+
+        /* =================================================
+           VARIABLES
+        ================================================= */
+
+        const botonesEstado =
+            document.querySelectorAll(".estado-btn");
+
+        const botonActualizar =
+            document.querySelector(".actualizar");
+
+        const estadoPrincipal =
+            document.querySelector(".estado-principal");
+
+        const pedidoSeleccionado =
+            document.querySelector(".pedido.seleccionado");
+
+        const estadoPedido =
+            pedidoSeleccionado.querySelector(".estado");
+
+
+        let estadoSeleccionado = "PENDIENTE";
+
+
+        /* =================================================
+           BOTONES DE ESTADO
+        ================================================= */
+
+        botonesEstado.forEach(function(boton) {
+
+            boton.addEventListener("click", function() {
+
+                /* Quitar selección anterior */
+
+                botonesEstado.forEach(function(b) {
+
+                    b.classList.remove("activo");
+
+                });
+
+
+                /* Activar botón seleccionado */
+
+                boton.classList.add("activo");
+
+
+                /* Guardar estado */
+
+                estadoSeleccionado =
+                    boton.dataset.estado;
+
+
+                /* Cambiar texto del botón */
+
+                if (estadoSeleccionado === "PENDIENTE") {
+
+                    botonActualizar.textContent =
+                        "PASAR A: EN PREPARACIÓN";
+
+                }
+
+                else if (estadoSeleccionado === "EN PREPARACIÓN") {
+
+                    botonActualizar.textContent =
+                        "PASAR A: LISTO";
+
+                }
+
+                else if (estadoSeleccionado === "LISTO") {
+
+                    botonActualizar.textContent =
+                        "PASAR A: ENTREGADO";
+
+                }
+
+                else if (estadoSeleccionado === "ENTREGADO") {
+
+                    botonActualizar.textContent =
+                        "MARCAR COMO ENTREGADO";
+
+                }
+
+            });
+
+        });
+
+
+        /* =================================================
+           BOTÓN ACTUALIZAR
+        ================================================= */
+
+        botonActualizar.addEventListener("click", function() {
+
+
+            /* Cambiar estado del encabezado */
+
+            estadoPrincipal.textContent =
+                estadoSeleccionado;
+
+
+            /* Cambiar estado del pedido */
+
+            if (estadoPedido) {
+
+                estadoPedido.textContent =
+                    estadoSeleccionado;
+
+            }
+
+
+            /* Guardar estado como atributo */
+
+            if (pedidoSeleccionado) {
+
+                pedidoSeleccionado.dataset.estado =
+                    estadoSeleccionado.toLowerCase();
+
+            }
+
+
+            /* Mensaje */
+
+            if (estadoSeleccionado === "ENTREGADO") {
+
+                botonActualizar.textContent =
+                    "PEDIDO ENTREGADO";
+
+            }
+
+            else if (estadoSeleccionado === "PENDIENTE") {
+
+                botonActualizar.textContent =
+                    "PASAR A: EN PREPARACIÓN";
+
+            }
+
+            else if (estadoSeleccionado === "EN PREPARACIÓN") {
+
+                botonActualizar.textContent =
+                    "PASAR A: LISTO";
+
+            }
+
+            else if (estadoSeleccionado === "LISTO") {
+
+                botonActualizar.textContent =
+                    "PASAR A: ENTREGADO";
+
+            }
+
+        });
+
+
+        /* =================================================
+           SELECCIONAR PEDIDOS
+        ================================================= */
+
+        const pedidos =
+            document.querySelectorAll(".pedido");
+
+
+        pedidos.forEach(function(pedido) {
+
+            pedido.addEventListener("click", function() {
+
+
+                /* Quitar selección */
+
+                pedidos.forEach(function(p) {
+
+                    p.classList.remove("seleccionado");
+
+                });
+
+
+                /* Seleccionar pedido */
+
+                pedido.classList.add("seleccionado");
+
+
+                /* Obtener información */
+
+                const numero =
+                    pedido.querySelector(".numero").textContent;
+
+                const mesa =
+                    pedido.querySelector(".mesa").textContent;
+
+                const hora =
+                    pedido.querySelector(".hora").textContent;
+
+                const estado =
+                    pedido.querySelector(".estado").textContent;
+
+
+                /* Cambiar información */
+
+                document.querySelector(".encabezado h2").childNodes[0].nodeValue =
+                    numero + " ";
+
+
+                document.querySelector(".recibido").textContent =
+                    mesa + " · recibido a las " + hora;
+
+
+                estadoPrincipal.textContent =
+                    estado.toUpperCase();
+
+
+                estadoPedido.textContent =
+                    estado;
+
+
+                /* Cambiar botón activo */
+
+                botonesEstado.forEach(function(boton) {
+
+                    boton.classList.remove("activo");
+
+                    if (
+                        boton.dataset.estado.toLowerCase() ===
+                        estado.toLowerCase()
+                    ) {
+
+                        boton.classList.add("activo");
+
+                    }
+
+                });
+
+
+                estadoSeleccionado =
+                    estado.toUpperCase();
+
+
+                /* Actualizar texto */
+
+                if (estadoSeleccionado === "PENDIENTE") {
+
+                    botonActualizar.textContent =
+                        "PASAR A: EN PREPARACIÓN";
+
+                }
+
+                else if (estadoSeleccionado === "EN PREPARACIÓN") {
+
+                    botonActualizar.textContent =
+                        "PASAR A: LISTO";
+
+                }
+
+                else if (estadoSeleccionado === "LISTO") {
+
+                    botonActualizar.textContent =
+                        "PASAR A: ENTREGADO";
+
+                }
+
+                else {
+
+                    botonActualizar.textContent =
+                        "PEDIDO ENTREGADO";
+
+                }
+
+            });
+
+        });
+
+
+        /* =================================================
+           FILTROS
+        ================================================= */
+
+        const filtros =
+            document.querySelectorAll(".filtro");
+
+
+        filtros.forEach(function(filtro) {
+
+            filtro.addEventListener("click", function() {
+
+
+                /* Quitar activo */
+
+                filtros.forEach(function(f) {
+
+                    f.classList.remove("activo");
+
+                });
+
+
+                /* Activar filtro */
+
+                filtro.classList.add("activo");
+
+
+                const tipo =
+                    filtro.dataset.filtro;
+
+
+                /* Mostrar pedidos */
+
+                pedidos.forEach(function(pedido) {
+
+                    const estado =
+                        pedido.dataset.estado;
+
+
+                    if (tipo === "todos") {
+
+                        pedido.style.display = "block";
+
+                    }
+
+                    else if (tipo === estado) {
+
+                        pedido.style.display = "block";
+
+                    }
+
+                    else {
+
+                        pedido.style.display = "none";
+
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

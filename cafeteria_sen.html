@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Central - Panel de pedidos</title>
+<link rel="stylesheet" href="cafeteria_pedidos.css">
+
+
+</head>
+
+<body>
+
+<header>
+    <nav class="menu">
+
+    <a href="index.html">🏠 Inicio</a>
+
+    <a href="cafeteria.html">☕ Productos</a>
+
+    <a href="cafeteria_sen.html">📋 Servicios</a>
+
+    <a href="tu_carito.html">🛒 Carrito</a>
+
+    <a href="panel_enpleados.html">👨‍💼 Empleados</a>
+
+    </nav>
+    <div class="logo-area">
+        <div class="logo">☕</div>
+
+        <div class="logo-text">
+            <h1>Café Central</h1>
+            <p>PANEL DE PEDIDOS</p>
+        </div>
+    </div>
+
+    <div class="shift">
+        <strong>2</strong> Turnos
+        &nbsp;&nbsp;&nbsp;
+        Desde 08:00 a 18:00
+        <span class="online">● En línea</span>
+    </div>
+
+</header>
+
+
+<div class="container">
+
+    <!-- ESTADÍSTICAS -->
+
+    <section class="stats">
+
+        <div class="stat blue">
+            <div class="stat-title">ACTIVOS</div>
+            <div class="stat-number">3</div>
+            <small>en curso</small>
+        </div>
+
+        <div class="stat purple">
+            <div class="stat-title">LISTOS</div>
+            <div class="stat-number">1</div>
+            <small>para servir</small>
+        </div>
+
+        <div class="stat green">
+            <div class="stat-title">ENTREGADOS</div>
+            <div class="stat-number">1</div>
+            <small>hoy</small>
+        </div>
+
+        <div class="stat orange">
+            <div class="stat-title">FACTURACIÓN</div>
+            <div class="stat-number">$MX</div>
+            <small>sin cancelados</small>
+        </div>
+
+    </section>
+
+
+    <!-- FILTROS -->
+
+    <div class="filters">
+
+        <div class="filter active">
+            Todos&nbsp; 5
+        </div>
+
+        <div class="filter">
+            Pendiente&nbsp; 1
+        </div>
+
+        <div class="filter">
+            Preparando&nbsp; 1
+        </div>
+
+        <div class="filter">
+            Listo&nbsp; 1
+        </div>
+
+        <div class="filter">
+            Entregado&nbsp; 1
+        </div>
+
+        <div class="filter">
+            Cancelado&nbsp; 1
+        </div>
+
+    </div>
+
+
+    <!-- CONTENIDO -->
+
+    <main class="main">
+
+        <section class="orders">
+
+            <!-- PEDIDO 42 -->
+
+            <div class="order">
+
+                <div class="order-top">
+
+                    <div class="order-name">
+
+                        <div class="order-icon icon-green">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h2>Mesa 4</h2>
+                            <div class="order-id">
+                                #42 · 09:14
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <span class="status green">
+                        Entregado
+                    </span>
+
+                </div>
+
+                <div class="items">
+                    1× Flat White, 2× Croissant mantequilla,
+                    1× Zumo naranja
+                </div>
+
+                <div class="order-bottom">
+                    <span class="article-count">
+                        4 ARTÍCULOS
+                    </span>
+
+                    <span class="price">
+                        $9,80
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- PEDIDO 43 -->
+
+            <div class="order selected">
+
+                <div class="order-top">
+
+                    <div class="order-name">
+
+                        <div class="order-icon icon-purple">
+                            🔔
+                        </div>
+
+                        <div>
+                            <h2>Mesa 7</h2>
+                            <div class="order-id">
+                                #43 · 09:22
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <span class="status purple">
+                        Listo ✦
+                    </span>
+
+                </div>
+
+                <div class="items">
+                    2× Cappuccino, 1× Tostada con tomate,
+                    1× Agua con gas
+                </div>
+
+                <div class="order-bottom">
+                    <span class="article-count">
+                        4 ARTÍCULOS
+                    </span>
+
+                    <span class="price">
+                        $7,40
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- PEDIDO 44 -->
+
+            <div class="order">
+
+                <div class="order-top">
+
+                    <div class="order-name">
+
+                        <div class="order-icon icon-purple">
+                            ☕
+                        </div>
+
+                        <div>
+                            <h2>Barra</h2>
+                            <div class="order-id">
+                                #44 · 09:28
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <span class="status" style="
+                        background:rgba(20,160,240,.15);
+                        color:#42baff;">
+                        Preparando
+                    </span>
+
+                </div>
+
+                <div class="items">
+                    1× Cortado, 1× Napolitana chocolate,
+                    1× Té verde
+                </div>
+
+                <div class="order-bottom">
+                    <span class="article-count">
+                        3 ARTÍCULOS
+                    </span>
+
+                    <span class="price">
+                        $6,20
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- PEDIDO 45 -->
+
+            <div class="order">
+
+                <div class="order-top">
+
+                    <div class="order-name">
+
+                        <div class="order-icon icon-yellow">
+                            ⌛
+                        </div>
+
+                        <div>
+                            <h2>Mesa 1</h2>
+                            <div class="order-id">
+                                #45 · 09:35
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <span class="status yellow">
+                        Pendiente
+                    </span>
+
+                </div>
+
+                <div class="items">
+                    2× Café con leche, 1× Bocadillo jamón
+                </div>
+
+                <div class="order-bottom">
+                    <span class="article-count">
+                        3 ARTÍCULOS
+                    </span>
+
+                    <span class="price">
+                        €8,50
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- PEDIDO 41 -->
+
+            <div class="order">
+
+                <div class="order-top">
+
+                    <div class="order-name">
+
+                        <div class="order-icon icon-red">
+                            ×
+                        </div>
+
+                        <div>
+                            <h2>Mesa 3</h2>
+                            <div class="order-id">
+                                #41 · 08:58
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <span class="status red">
+                        Cancelado
+                    </span>
+
+                </div>
+
+                <div class="items">
+                    1× Espresso doble, 1× Muffin arándanos
+                </div>
+
+                <div class="order-bottom">
+                    <span class="article-count">
+                        2 ARTÍCULOS
+                    </span>
+
+                    <span class="price">
+                        $5,30
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PANEL DE DETALLE -->
+
+        <aside class="details">
+
+            <div class="detail-header">
+
+                <div>
+                    <small>PEDIDO #43</small>
+                    <h2>Mesa 7</h2>
+                    <div class="received">
+                        Recibido a las 09:22
+                    </div>
+                </div>
+
+                <div class="bell">
+                    🔔
+                </div>
+
+            </div>
+
+
+            <div class="article-box">
+
+                <div class="article-title">
+                    ARTÍCULOS
+                </div>
+
+                <div class="article">
+                    <span>Cappuccino</span>
+                    <span>×2</span>
+                </div>
+
+                <div class="article">
+                    <span>Tostada con tomate</span>
+                    <span>×1</span>
+                </div>
+
+                <div class="article">
+                    <span>Agua con gas</span>
+                    <span>×1</span>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="total">
+                    <span>Total</span>
+                    <strong>$7,40</strong>
+                </div>
+
+            </div>
+
+
+            <!-- SEGUIMIENTO -->
+
+            <div class="tracking">
+
+                <div class="tracking-title">
+                    SEGUIMIENTO
+                </div>
+
+                <div class="step">
+
+                    <div class="dot"></div>
+
+                    <div class="step-text">
+                        <strong>Pedido recibido</strong>
+                        <small>09:22</small>
+                    </div>
+
+                    <div class="connector"></div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="dot"></div>
+
+                    <div class="step-text">
+                        <strong>En preparación</strong>
+                        <small>09:23</small>
+                    </div>
+
+                    <div class="connector"></div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="dot"></div>
+
+                    <div class="step-text">
+                        <strong>Listo para servir</strong>
+                        <small>09:29</small>
+                    </div>
+
+                    <div class="connector"></div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="dot empty"></div>
+
+                    <div class="step-text">
+                        <strong style="color:#666;">
+                            Entregado
+                        </strong>
+                        <small>--</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="deliver"
+                    onclick="entregarPedido()">
+                Marcar como entregado ✓
+            </button>
+
+        </aside>
+
+    </main>
+
+</div>
+
+
+<script>
+
+function entregarPedido() {
+
+    const boton = document.querySelector(".deliver");
+
+    boton.innerHTML = "✓ Pedido entregado";
+
+    boton.style.background =
+        "linear-gradient(90deg, #159f72, #20c98e)";
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5eee5;
+    color: #43291c;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    height: 80px;
+    background: #70401f;
+    border-bottom: 4px solid #c69c6d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+    color: white;
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8e9d8;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* =========================
+   BOTÓN LOGIN
+========================= */
+
+.login {
+    border: 1px solid #e0c3a4;
+    padding: 10px 18px;
+    border-radius: 5px;
+    background: #8b542f;
+}
+
+.login:hover {
+    background: #a96c42;
+    color: white;
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+    text-align: center;
+    padding: 120px 20px 80px;
+}
+
+/* TÍTULO */
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #43291c;
+    letter-spacing: 1px;
+}
+
+/* Línea decorativa */
+
+h1::after {
+    content: "";
+    display: block;
+
+    width: 80px;
+    height: 3px;
+
+    background: #b87945;
+
+    margin: 18px auto 0;
+
+    border-radius: 5px;
+}
+
+/* TEXTO */
+
+p {
+    font-size: 20px;
+    color: #806b5a;
+    margin-top: 20px;
+}
+
+/* =========================
+   BOTÓN PRINCIPAL
+========================= */
+
+.boton {
+    display: inline-block;
+
+    margin-top: 35px;
+    padding: 15px 50px;
+
+    background: #70401f;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 4px 12px rgba(70, 40, 20, 0.20);
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #8b542f;
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 16px rgba(70, 40, 20, 0.25);
+}
+
+/* =========================
+   EFECTO DE FONDO
+========================= */
+
+main::before {
+    content: "";
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    background: #eadbc9;
+
+    border-radius: 50%;
+
+    left: -100px;
+    top: 180px;
+
+    opacity: 0.45;
+
+    z-index: -1;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    background: #dfc5aa;
+
+    border-radius: 50%;
+
+    right: -80px;
+    bottom: 50px;
+
+    opacity: 0.35;
+
+    z-index: -1;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+        min-height: 80px;
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 80px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .boton {
+        padding: 14px 35px;
+    }
+}
+/* =================================
+   BOTONES DE CONEXIÓN
+   Solo modifica los enlaces del menú
+================================= */
+
+.menu {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background: #5c321c;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+/* Cuando pasas el mouse */
+.menu a:hover {
+    background: #8b5636;
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Página en la que estás */
+.menu a.activo {
+    background: #c17a4a;
+    color: white;
+}
+
+/* Cuando haces clic */
+.menu a:active {
+    transform: scale(0.96);
+}

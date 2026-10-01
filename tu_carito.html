@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="cd.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Carrito - Cafetería Escolar</title>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            <div class="logo-img">
+                <img src="logo.png" alt="Logo Cafetería">
+            </div>
+
+            <div>
+                <h2>Cafetería Escolar</h2>
+                <p>CECyTEM</p>
+            </div>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="index.html">🏠 Inicio</a>
+
+            <a href="cafeteria.html">☕ Productos</a>
+
+            <a href="cafeteria_sen.html">📋 Servicios</a>
+
+            <a href="tu_carito.html">🛒 Carrito</a>
+
+            <a href="panel_enpleados.html">👨‍💼 Empleados</a>
+
+        </nav>
+
+
+        <div class="acciones">
+
+            <div class="buscador">
+                🔍
+                <input type="text" placeholder="Buscar productos...">
+            </div>
+
+            <button class="login">
+                👤 Iniciar sesión
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CONTENIDO ================= -->
+
+    <main>
+
+        <!-- Ruta -->
+
+      
+
+
+        <!-- TÍTULO -->
+
+        <section class="titulo">
+
+            <div class="icono-carrito">
+                🛒
+            </div>
+
+            <div>
+
+                <h1>Tu carrito</h1>
+
+                <p>
+                    Revisa los productos, cantidades y total de tu pedido.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTENEDOR PRINCIPAL ================= -->
+
+        <div class="contenido">
+
+
+            <!-- ================= PRODUCTOS ================= -->
+
+            <section class="productos">
+
+                <div class="encabezados">
+
+                    <strong>Producto</strong>
+
+                    <strong>Precio</strong>
+
+                    <strong>Cantidad</strong>
+
+                    <strong>Total</strong>
+
+                </div>
+
+
+                <!-- ================= PRODUCTO 1 ================= -->
+
+                <div class="producto">
+
+                    <div class="producto-info">
+
+                        <div class="imagen">
+
+                            <img
+                                src="hamburgesa.png"
+                                alt="Hamburguesa clásica"
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3>Hamburguesa clásica</h3>
+
+                            <p>
+                                Con lechuga, tomate y aderezo.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="precio">
+                        $45.00
+                    </div>
+
+
+                    <div class="cantidad">
+
+                        <button onclick="cambiarCantidad(0, -1)">
+                            −
+                        </button>
+
+                        <span id="cantidad0">
+                            1
+                        </span>
+
+                        <button onclick="cambiarCantidad(0, 1)">
+                            +
+                        </button>
+
+                    </div>
+
+
+                    <div class="total-producto" id="total0">
+                        $45.00
+                    </div>
+
+
+                    <button
+                        class="eliminar"
+                        onclick="eliminarProducto(0)"
+                    >
+                        🗑️
+                    </button>
+
+                </div>
+
+
+                <!-- ================= PRODUCTO 2 ================= -->
+
+                <div class="producto">
+
+                    <div class="producto-info">
+
+                        <div class="imagen">
+
+                            <img
+                                src="tostadas.png"
+                                alt="Tostadas"
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3>Tostadas</h3>
+
+                            <p>
+                                Con frijoles, lechuga y queso.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="precio">
+                        $30.00
+                    </div>
+
+
+                    <div class="cantidad">
+
+                        <button onclick="cambiarCantidad(1, -1)">
+                            −
+                        </button>
+
+                        <span id="cantidad1">
+                            2
+                        </span>
+
+                        <button onclick="cambiarCantidad(1, 1)">
+                            +
+                        </button>
+
+                    </div>
+
+
+                    <div class="total-producto" id="total1">
+                        $60.00
+                    </div>
+
+
+                    <button
+                        class="eliminar"
+                        onclick="eliminarProducto(1)"
+                    >
+                        🗑️
+                    </button>
+
+                </div>
+
+
+                <!-- ================= PRODUCTO 3 ================= -->
+
+                <div class="producto">
+
+                    <div class="producto-info">
+
+                        <div class="imagen">
+
+                            <img
+                                src="agua.png"
+                                alt="Agua natural"
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3>Agua natural</h3>
+
+                            <p>
+                                500 ml.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="precio">
+                        $15.00
+                    </div>
+
+
+                    <div class="cantidad">
+
+                        <button onclick="cambiarCantidad(2, -1)">
+                            −
+                        </button>
+
+                        <span id="cantidad2">
+                            1
+                        </span>
+
+                        <button onclick="cambiarCantidad(2, 1)">
+                            +
+                        </button>
+
+                    </div>
+
+
+                    <div class="total-producto" id="total2">
+                        $15.00
+                    </div>
+
+
+                    <button
+                        class="eliminar"
+                        onclick="eliminarProducto(2)"
+                    >
+                        🗑️
+                    </button>
+
+                </div>
+
+
+                <!-- ================= PRODUCTO 4 ================= -->
+
+                <div class="producto">
+
+                    <div class="producto-info">
+
+                        <div class="imagen">
+
+                            <img
+                                src="galleta.png"
+                                alt="Galletas"
+                            >
+
+                        </div>
+
+                        <div>
+
+                            <h3>Galletas</h3>
+
+                            <p>
+                                Paquete.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="precio">
+                        $12.00
+                    </div>
+
+
+                    <div class="cantidad">
+
+                        <button onclick="cambiarCantidad(3, -1)">
+                            −
+                        </button>
+
+                        <span id="cantidad3">
+                            1
+                        </span>
+
+                        <button onclick="cambiarCantidad(3, 1)">
+                            +
+                        </button>
+
+                    </div>
+
+
+                    <div class="total-producto" id="total3">
+                        $12.00
+                    </div>
+
+
+                    <button
+                        class="eliminar"
+                        onclick="eliminarProducto(3)"
+                    >
+                        🗑️
+                    </button>
+
+                </div>
+
+
+                <!-- BOTÓN SEGUIR COMPRANDO -->
+
+                <button
+                    class="seguir"
+                    onclick="seguirComprando()"
+                >
+                    ← &nbsp; Seguir comprando
+                </button>
+
+            </section>
+
+
+            <!-- ================= RESUMEN ================= -->
+
+            <aside class="resumen">
+
+                <h2>
+                    Resumen del pedido
+                </h2>
+
+
+                <div class="resumen-productos">
+
+                    <div>
+
+                        <span>
+                            Hamburguesa clásica
+                        </span>
+
+                        <span>
+                            $45.00
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Tostadas (2)
+                        </span>
+
+                        <span>
+                            $60.00
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Agua natural
+                        </span>
+
+                        <span>
+                            $15.00
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Galletas
+                        </span>
+
+                        <span>
+                            $12.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <hr>
+
+
+                <div class="fila">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <span id="subtotal">
+                        $132.00
+                    </span>
+
+                </div>
+
+
+                <div class="fila">
+
+                    <span>
+                        IVA (16%)
+                    </span>
+
+                    <span id="iva">
+                        $21.12
+                    </span>
+
+                </div>
+
+
+                <div class="total-final">
+
+                    <strong>
+                        Total
+                    </strong>
+
+                    <strong id="total">
+                        $153.12
+                    </strong>
+
+                </div>
+
+
+                <!-- CONFIRMAR PEDIDO -->
+
+                <button
+                    class="confirmar"
+                    onclick="confirmarPedido()"
+                >
+                    💳 &nbsp; Confirmar pedido
+                </button>
+
+
+                <hr>
+
+
+                <div class="tiempo">
+
+                    🚚
+
+                    <div>
+
+                        <p>
+                            Tu pedido estará listo en:
+                        </p>
+
+                        <strong>
+                            10 – 15 min
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <div class="logo-img">
+
+                <img
+                    src="logo.png"
+                    alt="Logo Cafetería"
+                >
+
+            </div>
+
+            <div>
+
+                <strong>
+                    Cafetería Escolar
+                </strong>
+
+                <p>
+                    Buen sabor, mejor día.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#">
+                Aviso de privacidad
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Términos y condiciones
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Contacto
+            </a>
+
+        </div>
+
+
+        <div class="redes">
+
+            ●
+
+            ●
+
+            ●
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
